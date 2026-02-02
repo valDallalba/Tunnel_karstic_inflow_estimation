@@ -1,0 +1,58 @@
+alpha: 1.7
+code_aquiclude: 1
+code_aquifere: 2
+code_conduits: 5
+code_faults: 4
+code_fractures: 4
+code_out: 0.1
+data_has_polygon: false
+dx: 1
+dy: 1
+faults_mode: 'null'
+fractures_densities:
+- 0.0001
+- 0.0008
+- 0.0008
+- 0.0001
+fractures_max_length:
+- 4000
+- 500
+- 500
+- 4000
+fractures_max_orientation:
+- 5
+- 30
+- -25
+- 95
+fractures_min_length:
+- 200
+- 100
+- 100
+- 200
+fractures_min_orientation:
+- -5
+- 25
+- -30
+- 85
+fractures_mode: random
+geological_mode: 'null'
+geology_id:
+- 1
+- 2
+geology_velocity:
+- code_aquifere
+- code_aquiclude
+importance_factor:
+- 1
+- 2
+inlets_data: model_info/points_in.csv
+inlets_mode: composite
+inlets_number: 20
+outlets_data: model_info/points_out.csv
+outlets_mode: composite
+outlets_number: 0
+rand_seed: 123456789
+x0: 0
+xnum: 2000
+y0: 0
+ynum: 200

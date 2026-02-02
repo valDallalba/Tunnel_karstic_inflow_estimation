@@ -1,0 +1,5 @@
+.ipynb_checkpoints/
+pykasso_networks_simply/
+pykasso_networks_simply_cfp/
+pykasso_networks_simply_mf6/
+.idea/
