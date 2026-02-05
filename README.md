@@ -41,20 +41,15 @@ An a posteriori analysis of conduit friction coefficients is also performed and 
 
 
 ## Example of results
-
-![Simulation results](images/resultats.png)
+<p align="center">
+  <img src="images/resultats.png" alt="Simulation results" width="700">
+</p>
 
 -------------------------------------------------
 
-![Simulation results](images/resultats_2.png)
-
-## Repository structure
-
-Tunnel_karstic_inflow_estimation/
-├── 00_test_bernouilli_weisbach/
-├── 01_test_karst_network_generator/
-└── 02_final_results/
-
+<p align="center">
+  <img src="images/resultats_2.png" alt="Simulation results 2 " width="700">
+</p>
 
 ## Notes
 
