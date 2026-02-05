@@ -11,28 +11,42 @@ Dallalba et al. (2022), *Journal of Hydrology*.
 https://www.sciencedirect.com/science/article/pii/S0013795222004355
 
 ## Methodological workflow
+Each step of the process is stochastic, and the full methodology relies on repeating this workflow through Monte Carlo simulations.
 
-![Methodology workflow](images/methodologie.png)
+### Step 1 – 3D karst network simulation (PyKasso)
 
-The approach is based on four main steps:
+- Stochastic generation of fracture and karst conduit networks.
+- Definition of inlet locations and computation of network geometry.
+- Simulations performed using the **PyKasso** package.
 
-1. **3D karst network simulation**  
-   Stochastic generation of karst conduit networks using the **Pykaso** package.
+### Step 2 – Conduit aperture simulation (Geone)
 
-2. **Conduit aperture simulation**  
-   Aperture fields derived from Gaussian Random Fields (GRF) using the geostatistical package **Geone**, combined with statistical distributions from the literature.
+- Stochastic simulation of conduit diameters.
+- Gaussian Random Fields (GRF) generated with the geostatistical package **Geone**.
+- Statistical distributions derived from the literature.
 
-3. **3D flow simulation**  
-   Hydraulic simulations of flow within the karst network and tunnel–karst interactions performed with the proprietary software **DISCO**.
+### Step 3 – 3D flow simulation (DISCO)
 
-4. **Stochastic analysis of tunnel inflows**  
-   Monte Carlo simulations to explore the full range of possible breakthrough discharges.
+- 3D meshing of the karst network.
+- Definition of boundary conditions and tunnel location.
+- Hydraulic flow simulations performed with the proprietary software **DISCO**.
+- Computation of one possible tunnel inflow rate for each realization.
 
-An a posteriori analysis of conduit friction coefficients is performed and compared with analytical formulations and literature values.
+### Monte Carlo framework
+
+The three steps above are repeated many times to explore the full range of possible hydraulic behaviours.  
+Monte Carlo simulations are used to obtain statistical distributions of tunnel breakthrough discharge rates.
+
+An a posteriori analysis of conduit friction coefficients is also performed and compared with analytical formulations and literature values.
+
 
 ## Example of results
 
 ![Simulation results](images/resultats.png)
+
+-------------------------------------------------
+
+![Simulation results](images/resultats_2.png)
 
 ## Repository structure
 
