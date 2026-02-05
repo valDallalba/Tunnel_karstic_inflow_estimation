@@ -12,7 +12,7 @@ https://www.sciencedirect.com/science/article/pii/S0013795222004355
 
 ## Methodological workflow
 
-![Methodology workflow](images/methodology.png)
+![Methodology workflow](images/methodologie.png)
 
 The approach is based on four main steps:
 
@@ -32,7 +32,7 @@ An a posteriori analysis of conduit friction coefficients is performed and compa
 
 ## Example of results
 
-![Simulation results](images/results.png)
+![Simulation results](images/resultats.png)
 
 ## Repository structure
 
